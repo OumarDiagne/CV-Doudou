@@ -20,13 +20,25 @@
       referrerpolicy="no-referrer"
     />
 
+    <style>
+      .link-underline {
+        color: var(--primary);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .link-underline:hover {
+        color: var(--dark);
+        text-decoration-thickness: 2px;
+      }
+    </style>
+
     <title>M. THIAM Doudou | Ingénieur Génie Civil et Infrastructures</title>
   </head>
 
   <body>
     <div class="grid-container">
       <header>
-        <nav class="language-switcher" aria-label="Select language">
+        <nav class="language-switcher" aria-label="Sélection de la langue">
           <a
             class="language-button active"
             href="./index.html"
@@ -44,7 +56,7 @@
       </header>
 
       <section class="picture">
-        <img src="img/photodoudou2.jpg" alt="Portrait of M. THIAM Doudou" />
+        <img src="img/photodoudou2.jpg" alt="Portrait de M. THIAM Doudou" />
       </section>
 
       <aside>
@@ -52,41 +64,64 @@
           <h2 class="title-small">CONTACT</h2>
 
           <h3>Téléphone</h3>
-          <p>+33661627770</p>
+          <p>+33 6 61 62 77 70</p>
 
           <h3>Email</h3>
           <p>
-            <a href="mailto:doudou.thiam@gmail.com">doudou.thiam@gmail.com</a>
+            <!-- Adresse e-mail masquée : le lien mène au formulaire de contact -->
+            <a href="#contact" class="js-contact-link link-underline">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              M’envoyer un message
+            </a>
           </p>
 
-          <h3>Location</h3>
-          <p>Ile-de-france, France</p>
+          <h3>Localisation</h3>
+          <p>Île-de-France, France</p>
+        </div>
+
+        <div class="block">
+          <h2 class="title-small">ENTREPRISE</h2>
+
+          <h3>Daemod</h3>
+          <p>
+            <a
+              class="link-underline"
+              href="https://daemod.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visiter le site de Daemod (s’ouvre dans un nouvel onglet)"
+            >
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+              daemod.com
+            </a>
+          </p>
         </div>
 
         <div class="block">
           <h2 class="title-small">FORMATION</h2>
 
           <p>
-            2014 : Formation Encadrement technique Amiante sous-section 3,Rennes
+            2014 : Formation Encadrement technique Amiante sous-section 3,
+            Rennes
           </p>
           <p>
             2013 : Formation en Coordination SPS « Sécurité, Protection de la
             Santé », Yvelines
           </p>
-          <p>2010 : Formation Negociation Commerciale, Paris</p>
+          <p>2010 : Formation Négociation Commerciale, Paris</p>
           <p>
-            2007 : Master d’Ingénieur en Génie Civil et Infrastructures , Cergy
+            2007 : Master d’Ingénieur en Génie Civil et Infrastructures, Cergy
           </p>
-          <p>2004 : Licence en modélisation Mécanique,UPMC Paris 6</p>
-          <p>2003 : DEUG « Sciences pour l’Ingénieur » ,UPMC Paris 6</p>
+          <p>2004 : Licence en Modélisation Mécanique, UPMC Paris 6</p>
+          <p>2003 : DEUG « Sciences pour l’Ingénieur », UPMC Paris 6</p>
           <p>
-            2001 : Baccalauréat Scientifique Spécialité « Mathématiques » -
+            2001 : Baccalauréat Scientifique Spécialité « Mathématiques » —
             Lycée Bergson, Paris
           </p>
         </div>
 
         <div class="block">
-          <h2 class="title-small">COMPETENCES</h2>
+          <h2 class="title-small">COMPÉTENCES</h2>
 
           <h3>Bâtiment, multi-sites et BET</h3>
           <div class="bar-skill">
@@ -99,6 +134,7 @@
             <div class="bar-skill-progress-80"></div>
             <div class="bar-skill-dot-80"></div>
           </div>
+
           <h3>Management Business Administration de projets</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-80"></div>
@@ -111,7 +147,7 @@
             <div class="bar-skill-dot-80"></div>
           </div>
 
-          <h3>Negociation Financière et Décision</h3>
+          <h3>Négociation Financière et Décision</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-80"></div>
             <div class="bar-skill-dot-80"></div>
@@ -123,14 +159,15 @@
             <div class="bar-skill-dot-80"></div>
           </div>
 
-          <h3>Maitrise d'oeuvre technique et amiante</h3>
+          <h3>Maîtrise d’œuvre technique et amiante</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-80"></div>
             <div class="bar-skill-dot-80"></div>
           </div>
 
           <h3>
-            Conduite d'opérations,industrie, habitation, tertiaire et commerces
+            Conduite d’opérations : industrie, habitation, tertiaire et
+            commerces
           </h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-80"></div>
@@ -149,13 +186,13 @@
             <div class="bar-skill-dot-80"></div>
           </div>
 
-          <h3>Economie de la Construction</h3>
+          <h3>Économie de la Construction</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-80"></div>
             <div class="bar-skill-dot-80"></div>
           </div>
 
-          <h3>Etudes techniques(STR, CVCDP, Therm, CFOCFA et Sureté)</h3>
+          <h3>Études techniques (STR, CVCDP, Therm, CFO/CFA et Sûreté)</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-80"></div>
             <div class="bar-skill-dot-80"></div>
@@ -165,7 +202,6 @@
         <div class="block">
           <h2 class="title-small">OUTILS</h2>
 
-          <!--  -->
           <h3>MS Pack Office</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-80"></div>
@@ -182,19 +218,19 @@
             <div class="bar-skill-dot-60"></div>
           </div>
 
-          <h3>Autocad</h3>
+          <h3>AutoCAD</h3>
           <div class="bar-skill">
             <div class="bar-skill-progress-50"></div>
             <div class="bar-skill-dot-50"></div>
           </div>
         </div>
         <div class="block">
-          <h2 class="title-small">LANGAGES</h2>
+          <h2 class="title-small">LANGUES</h2>
 
-          <h3>French</h3>
+          <h3>Français</h3>
           <div
             class="stars-containers"
-            aria-label="Native or bilingual proficiency: 5 out of 5"
+            aria-label="Langue maternelle ou bilingue : 5 sur 5"
           >
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
@@ -203,10 +239,10 @@
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
           </div>
 
-          <h3>English</h3>
+          <h3>Anglais</h3>
           <div
             class="stars-containers"
-            aria-label="Professional working proficiency: 4 out of 5"
+            aria-label="Niveau intermédiaire : 3 sur 5"
           >
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
@@ -218,7 +254,7 @@
           <h3>Wolof</h3>
           <div
             class="stars-containers"
-            aria-label="Intermediate proficiency: 3 out of 5"
+            aria-label="Langue maternelle ou bilingue : 5 sur 5"
           >
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
@@ -229,14 +265,14 @@
         </div>
 
         <div class="block">
-          <h2 class="title-small">RESEAUX PROFESSIONNELS</h2>
+          <h2 class="title-small">RÉSEAUX PROFESSIONNELS</h2>
 
           <a
             class="social-container"
             href="https://www.linkedin.com/in/doudou-thiam-57104365/"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label="Open M. THIAM Doudou's LinkedIn profile"
+            aria-label="Ouvrir le profil LinkedIn de M. THIAM Doudou"
           >
             <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
             <span>LinkedIn</span>
@@ -248,11 +284,11 @@
         <h2 class="title-small">PROFIL PROFESSIONNEL</h2>
 
         <p class="mb-5">
-          20 ans d'expériences dans le domaine de la construction, de la
-          rénovation en multi sites et commerces; dont 10 ans en conduite de
-          projets divers et 10 ans en tant que manager d'équipes
+          20 ans d’expérience dans le domaine de la construction et de la
+          rénovation en multi-sites et commerces, dont 10 ans en conduite de
+          projets divers et 10 ans en tant que manager d’équipes
           pluridisciplinaires en études, en conception et en exécution de
-          projets complexes et variés en france et à l'international.
+          projets complexes et variés en France et à l’international.
         </p>
 
         <h2 class="title-small">
@@ -261,62 +297,62 @@
 
         <div class="experience">
           <div class="timeline">
-            Auj. <br />
+            2013 <br />
             – <br />
-            2013
+            Auj.
           </div>
 
           <div class="content">
             <h3>
-              Directeur des opérations et du développement (DGE:Cabinet
-              d'ingiénierie et de contractant général)
+              Directeur des opérations et du développement (DGE : Cabinet
+              d’ingénierie et de contractant général)
             </h3>
             <p class="text-hint mb-2">
-              Clients: Altarea Cogedim, Sncf, ONACVG, Steinway&Sons,
-              Chateauform, Tagerim, ville de Mériel
+              Clients : Altarea Cogedim, SNCF, ONACVG, Steinway &amp; Sons,
+              Châteauform’, Tagerim, ville de Mériel
             </p>
             <p>
-              Expert en diagnostic technique et financière des opérations.
-              <br />Contractant, Maître d’Oeuvre Etudes, Conception et
-              Réalisation de projets de bâtiments, Tertiaire et Espaces
-              commerciaux.<br />Management de projet de la création, de
+              Expert en diagnostic technique et financier des opérations.
+              <br />Contractant, Maître d’Œuvre Études, Conception et
+              Réalisation de projets de bâtiments, tertiaire et espaces
+              commerciaux.<br />Management de projets de création, de
               rénovation, de restructuration et de réorganisation de tout type
-              de sites (commerces, centre commerciaux, bureaux, musées,
-              bibliothèque)
+              de sites (commerces, centres commerciaux, bureaux, musées,
+              bibliothèques).
             </p>
             <ul>
-              <li>Maître d’Oeuvre Technique</li>
-              <li>Maître d’Oeuvre de Conception</li>
-              <li>Maître d’Oeuvre de Réalisation</li>
-              <li>Maître d’Oeuvre Amiante SS3</li>
-              <li>Maître d’Oeuvre Démolition</li>
+              <li>Maître d’Œuvre Technique</li>
+              <li>Maître d’Œuvre de Conception</li>
+              <li>Maître d’Œuvre de Réalisation</li>
+              <li>Maître d’Œuvre Amiante SS3</li>
+              <li>Maître d’Œuvre Démolition</li>
             </ul>
 
             <h3>
-              Directeur des opérations et du développement (CES:Bureau d'Études
-              thermiques)
+              Directeur des opérations et du développement (CES : Bureau
+              d’Études thermiques)
             </h3>
-            <p class="text-hint mb-2">Client: Syndic , privé, public</p>
+            <p class="text-hint mb-2">Clients : syndics, privé, public</p>
             <p>
-              Rédaction et création de stratégie de développment et de
-              croissance de l'entreprise, gestion des projets et des équipes,
+              Rédaction et création de la stratégie de développement et de
+              croissance de l’entreprise, gestion des projets et des équipes,
               suivi des budgets et des délais, mise en place de processus et
-              d'outils pour améliorer l'efficacité et la qualité du travail.
+              d’outils pour améliorer l’efficacité et la qualité du travail.
             </p>
             <ul>
-              <li>Audit, Diagnostic, Enveloppe et Bati.</li>
+              <li>Audit, diagnostic, enveloppe et bâti.</li>
               <li>
-                Rédaction, Suivi et Coordination des appels d'offres publiques
-                et privées.
+                Rédaction, suivi et coordination des appels d’offres publics et
+                privés.
               </li>
               <li>
-                Création et Développement de logiciels d'optimisation de la
+                Création et développement de logiciels d’optimisation de la
                 consommation énergétique.
               </li>
               <li>
-                Rédactions de contrats P1, P2 et P3 de la construction et de la
-                rénovation pour des batiments d'habitation collective ,
-                tertiaire et public.
+                Rédaction de contrats P1, P2 et P3 de la construction et de la
+                rénovation pour des bâtiments d’habitation collective,
+                tertiaires et publics.
               </li>
             </ul>
           </div>
@@ -324,18 +360,18 @@
 
         <div class="experience">
           <div class="timeline">
-            2012 <br />
+            2008 <br />
             – <br />
-            2008
+            2012
           </div>
 
           <div class="content">
             <h3>
               Chef de Projet National en Maîtrise d’Œuvre d’Exécution (KORUS :
-              Contractant général )
+              Contractant général)
             </h3>
             <p class="text-hint mb-2">
-              Client : Déploiement 8 M € PETIT CASINO/POSTIMMO, HARMONIE
+              Client : Déploiement 8 M€ PETIT CASINO/POSTIMMO, HARMONIE
               MUTUELLE, KIKO
             </p>
 
@@ -346,43 +382,43 @@
               </li>
               <li>Création de concept.</li>
               <li>Création de CCTP.</li>
-              <li>Estimation Budgétaire.</li>
-              <li>Suivi et Contrôle des opérations</li>
+              <li>Estimation budgétaire.</li>
+              <li>Suivi et contrôle des opérations.</li>
             </ul>
             <h3>
-              Conduite de projets en Maîtrise d’OEuvre d’Exécution(REPONSE:
+              Conduite de projets en Maîtrise d’Œuvre d’Exécution (RÉPONSE :
               Contractant général)
             </h3>
             <p class="text-hint mb-2">
-              Client: Déploiement Orange, LaPoste,McDonald, Marionnaud, Jack &
-              Jones, UNIQLO Opéra
+              Clients : Déploiement Orange, La Poste, McDonald’s, Marionnaud,
+              Jack &amp; Jones, UNIQLO Opéra
             </p>
             <ul>
               <li>
-                Formation et Management des conducteurs de travaux. Maître
-                d’OEuvre d’Exécution, Ordonnancement, Pilotage et Coordination
+                Formation et management des conducteurs de travaux. Maître
+                d’Œuvre d’Exécution, Ordonnancement, Pilotage et Coordination.
               </li>
-              <li>Etudes et Chiffrages d'estimations de projets.</li>
-              <li>Suivi et Contrôle des opérations</li>
+              <li>Études et chiffrages d’estimations de projets.</li>
+              <li>Suivi et contrôle des opérations.</li>
             </ul>
           </div>
         </div>
 
         <div class="experience">
           <div class="timeline">
-            2008 <br />
+            2006 <br />
             – <br />
-            2006
+            2008
           </div>
 
           <div class="content">
             <h3>Conduite de travaux (EIFFAGE CONSTRUCTION)</h3>
             <ul>
               <li>
-                Construction de bureaux R+3 de 8000m² en TCE au Carré Sénart.
+                Construction de bureaux R+3 de 8 000 m² en TCE au Carré Sénart.
               </li>
               <li>Ordonnancement, Pilotage et Coordination.</li>
-              <li>Gestion des équipes, sous traitants et marchés.</li>
+              <li>Gestion des équipes, sous-traitants et marchés.</li>
             </ul>
 
             <h3>Conduite de travaux (GTM / VINCI CONSTRUCTION)</h3>
@@ -392,23 +428,23 @@
                 à Boulogne-Billancourt.
               </li>
               <li>Ordonnancement, Pilotage et Coordination.</li>
-              <li>Gestion des équipes, sous traitants et marchés.</li>
+              <li>Gestion des équipes, sous-traitants et marchés.</li>
             </ul>
           </div>
         </div>
       </main>
 
-      <footer>
-        <h2 class="title-small">Me Contacter</h2>
+      <footer id="contact">
+        <h2 class="title-small">ME CONTACTER</h2>
 
         <form
-          name="contact-en"
+          name="contact-fr"
           method="POST"
-          action="/thank-you.html?lang=en"
+          action="/thank-you.html?lang=fr"
           data-netlify="true"
           netlify-honeypot="bot-field"
         >
-          <input type="hidden" name="form-name" value="contact-en" />
+          <input type="hidden" name="form-name" value="contact-fr" />
 
           <p class="hidden-field">
             <label>
@@ -417,27 +453,27 @@
             </label>
           </p>
 
-          <label for="name-en">Nom</label>
+          <label for="name-fr">Nom</label>
           <input
-            id="name-en"
+            id="name-fr"
             type="text"
             name="name"
             placeholder="Votre nom"
             required
           />
 
-          <label for="email-en">Email</label>
+          <label for="email-fr">Email</label>
           <input
-            id="email-en"
+            id="email-fr"
             type="email"
             name="email"
-            placeholder="Votre adresse email"
+            placeholder="Votre adresse e-mail"
             required
           />
 
-          <label for="message-en">Message</label>
+          <label for="message-fr">Message</label>
           <textarea
-            id="message-en"
+            id="message-fr"
             name="message"
             placeholder="Écrivez votre message"
             rows="5"
@@ -451,5 +487,20 @@
         </form>
       </footer>
     </div>
+
+    <script>
+      // Défilement fluide vers le formulaire et curseur dans le premier champ
+      document.querySelectorAll(".js-contact-link").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          document
+            .getElementById("contact")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+          setTimeout(function () {
+            document.getElementById("name-fr").focus({ preventScroll: true });
+          }, 500);
+        });
+      });
+    </script>
   </body>
 </html>

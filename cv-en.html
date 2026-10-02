@@ -20,6 +20,18 @@
       referrerpolicy="no-referrer"
     />
 
+    <style>
+      .link-underline {
+        color: var(--primary);
+        text-decoration: underline;
+        text-underline-offset: 3px;
+      }
+      .link-underline:hover {
+        color: var(--dark);
+        text-decoration-thickness: 2px;
+      }
+    </style>
+
     <title>Doudou THIAM | Civil Engineering & Infrastructure Manager</title>
   </head>
 
@@ -56,11 +68,33 @@
 
           <h3>Email</h3>
           <p>
-            <a href="mailto:doudou.thiam@gmail.com">doudou.thiam@gmail.com</a>
+            <!-- Email address hidden: link scrolls to the contact form -->
+            <a href="#contact" class="js-contact-link link-underline">
+              <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+              Send me a message
+            </a>
           </p>
 
           <h3>Location</h3>
           <p>Île-de-France, France</p>
+        </div>
+
+        <div class="block">
+          <h2 class="title-small">COMPANY</h2>
+
+          <h3>Daemod</h3>
+          <p>
+            <a
+              class="link-underline"
+              href="https://daemod.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit the Daemod website (opens in a new tab)"
+            >
+              <i class="fa-solid fa-globe" aria-hidden="true"></i>
+              daemod.com
+            </a>
+          </p>
         </div>
 
         <div class="block">
@@ -219,7 +253,7 @@
           <h3>English</h3>
           <div
             class="stars-containers"
-            aria-label="Professional working proficiency: 2 out of 5"
+            aria-label="Intermediate proficiency: 3 out of 5"
           >
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
             <i class="fa-solid fa-star text-primary" aria-hidden="true"></i>
@@ -273,9 +307,9 @@
 
         <div class="experience">
           <div class="timeline">
-            Present <br />
+            2013 <br />
             – <br />
-            2013
+            Present
           </div>
 
           <div class="content">
@@ -341,9 +375,9 @@
 
         <div class="experience">
           <div class="timeline">
-            2012 <br />
+            2008 <br />
             – <br />
-            2008
+            2012
           </div>
 
           <div class="content">
@@ -389,9 +423,9 @@
 
         <div class="experience">
           <div class="timeline">
-            2008 <br />
+            2006 <br />
             – <br />
-            2006
+            2008
           </div>
 
           <div class="content">
@@ -418,7 +452,7 @@
         </div>
       </main>
 
-      <footer>
+      <footer id="contact">
         <h2 class="title-small">GET IN TOUCH</h2>
 
         <form
@@ -471,5 +505,20 @@
         </form>
       </footer>
     </div>
+
+    <script>
+      // Smooth scroll to the contact form and put the cursor in the first field
+      document.querySelectorAll(".js-contact-link").forEach(function (link) {
+        link.addEventListener("click", function (event) {
+          event.preventDefault();
+          document
+            .getElementById("contact")
+            .scrollIntoView({ behavior: "smooth", block: "start" });
+          setTimeout(function () {
+            document.getElementById("name-en").focus({ preventScroll: true });
+          }, 500);
+        });
+      });
+    </script>
   </body>
 </html>
